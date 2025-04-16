@@ -48,6 +48,8 @@ console.log(response.data);
 - Blazing fast performance optimized for high-throughput applications
 - Implements HTTP best practices for reliable network communication
 - Specially optimized for LLM-based application workflows
+- Ultra-lightweight package size (only 50B gzipped)
+- Universal compatibility (works in both Browser and Node.js environments)
 - Fully typed with TypeScript
 - Async/await friendly interface
 - Drop-in replacement for axios
