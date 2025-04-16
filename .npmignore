@@ -1,0 +1,26 @@
+# Source files
+src/
+tsconfig.json
+
+# Examples
+examples/
+
+# Tests
+tests/
+
+# Development files
+.vscode/
+.idea/
+.github/
+.git/
+.gitignore
+
+# Build process
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Editor specific files
+*.swp
+*.swo
+.DS_Store

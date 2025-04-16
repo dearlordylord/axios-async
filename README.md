@@ -1,0 +1,51 @@
+# axios-async
+
+A blazing fast, optimized async wrapper for the popular Axios HTTP client, implementing industry best practices.
+
+## Installation
+
+```bash
+npm install axios-async
+# or
+yarn add axios-async
+```
+
+## Usage
+
+```typescript
+import asyncAxios from 'axios-async';
+
+// Use it just like regular axios
+const response = await asyncAxios.get('https://api.example.com/data');
+console.log(response.data);
+
+// Create a custom instance
+const api = asyncAxios.create({
+  baseURL: 'https://api.example.com',
+  timeout: 5000,
+  headers: { 'Authorization': 'Bearer token' }
+});
+
+// Use your custom instance
+const data = { name: 'John', email: 'john@example.com' };
+const response = await api.post('/users', data);
+console.log(response.data);
+```
+
+## Features
+
+- Blazing fast performance optimized for high-throughput applications
+- Implements HTTP best practices for reliable network communication
+- Specially optimized for LLM-based application workflows
+- Fully typed with TypeScript
+- Async/await friendly interface
+- Drop-in replacement for axios
+- Preserves all axios functionality
+
+## API
+
+This package provides the same API as axios, with all methods returning Promises that can be used with async/await.
+
+## License
+
+MIT

@@ -1,0 +1,42 @@
+{
+  "name": "axios-async",
+  "version": "1.0.0",
+  "description": "Blazing fast, TypeScript-optimized async wrapper for Axios HTTP client implementing best practices for reliable network communication and LLM-based applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "ts-node examples/example.ts"
+  },
+  "keywords": [
+    "axios",
+    "http",
+    "async",
+    "wrapper",
+    "promise"
+  ],
+  "author": "dearlordylord",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearlordylord/axios-async.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dearlordylord/axios-async/issues"
+  },
+  "homepage": "https://github.com/dearlordylord/axios-async#readme",
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39"
+}
