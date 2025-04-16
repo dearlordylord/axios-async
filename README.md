@@ -2,12 +2,23 @@
 
 A blazing fast, optimized async wrapper for the popular Axios HTTP client, implementing industry best practices.
 
+[![npm version](https://img.shields.io/npm/v/axios-async.svg)](https://www.npmjs.com/package/axios-async)
+[![npm downloads](https://img.shields.io/npm/dm/axios-async.svg)](https://www.npmjs.com/package/axios-async)
+
 ## Installation
 
 ```bash
+# npm
 npm install axios-async
-# or
+
+# yarn
 yarn add axios-async
+
+# pnpm
+pnpm add axios-async
+
+# bun
+bun add axios-async
 ```
 
 ## Usage
