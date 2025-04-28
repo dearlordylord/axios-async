@@ -4,7 +4,7 @@ import { AsyncAxiosInstance, AsyncAxiosStatic } from './types';
 /**
  * Create an AsyncAxios instance with the provided config
  */
-function createAsyncAxiosInstance(config?: Parameters<typeof axios.create>[0]): AsyncAxiosInstance {
+export function createAsyncAxiosInstance(config?: Parameters<typeof axios.create>[0]): AsyncAxiosInstance {
   // Create the base axios instance
   const axiosInstance = axios.create(config);
   
@@ -20,7 +20,7 @@ function createAsyncAxiosInstance(config?: Parameters<typeof axios.create>[0]): 
 /**
  * Create an AsyncAxiosStatic that mirrors the axios static object
  */
-const asyncAxios: AsyncAxiosStatic = {
+export const asyncAxios: AsyncAxiosStatic = {
   ...axios,
   create: createAsyncAxiosInstance,
 } as unknown as AsyncAxiosStatic;
@@ -29,7 +29,9 @@ const asyncAxios: AsyncAxiosStatic = {
 const defaultInstance = createAsyncAxiosInstance();
 
 // Add all axios properties to the default instance
-Object.assign(defaultInstance, asyncAxios);
+if (defaultInstance) {
+  Object.assign(defaultInstance, asyncAxios);
+}
 
 // Export the default instance
 export default defaultInstance as unknown as AsyncAxiosStatic;
