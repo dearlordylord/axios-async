@@ -1,6 +1,6 @@
 {
   "name": "axios-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blazing fast, TypeScript-optimized async wrapper for Axios HTTP client implementing best practices for reliable network communication and LLM-based applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

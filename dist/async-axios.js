@@ -3,6 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.asyncAxios = void 0;
+exports.createAsyncAxiosInstance = createAsyncAxiosInstance;
 const axios_1 = __importDefault(require("axios"));
 /**
  * Create an AsyncAxios instance with the provided config
@@ -19,11 +21,13 @@ function createAsyncAxiosInstance(config) {
 /**
  * Create an AsyncAxiosStatic that mirrors the axios static object
  */
-const asyncAxios = Object.assign(Object.assign({}, axios_1.default), { create: createAsyncAxiosInstance });
+exports.asyncAxios = Object.assign(Object.assign({}, axios_1.default), { create: createAsyncAxiosInstance });
 // Create a default instance
 const defaultInstance = createAsyncAxiosInstance();
 // Add all axios properties to the default instance
-Object.assign(defaultInstance, asyncAxios);
+if (defaultInstance) {
+    Object.assign(defaultInstance, exports.asyncAxios);
+}
 // Export the default instance
 exports.default = defaultInstance;
 //# sourceMappingURL=async-axios.js.map

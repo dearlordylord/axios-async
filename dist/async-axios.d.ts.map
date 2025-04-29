@@ -1,1 +1,1 @@
-{"version":3,"file":"async-axios.d.ts","sourceRoot":"","sources":["../src/async-axios.ts"],"names":[],"mappings":"AACA,OAAO,EAAsB,gBAAgB,EAAE,MAAM,SAAS,CAAC;wBAiClB,gBAAgB;AAA7D,wBAA8D"}
+{"version":3,"file":"async-axios.d.ts","sourceRoot":"","sources":["../src/async-axios.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAC1B,OAAO,EAAE,kBAAkB,EAAE,gBAAgB,EAAE,MAAM,SAAS,CAAC;AAE/D;;GAEG;AACH,wBAAgB,wBAAwB,CAAC,MAAM,CAAC,EAAE,UAAU,CAAC,OAAO,KAAK,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC,GAAG,kBAAkB,CAWxG;AAED;;GAEG;AACH,eAAO,MAAM,UAAU,EAAE,gBAGO,CAAC;wBAWY,gBAAgB;AAA7D,wBAA8D"}
